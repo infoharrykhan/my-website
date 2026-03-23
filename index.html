@@ -3,185 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome 🤗</title>
 <title>My Pro Website</title>
-
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
 }
 
-/* Navbar */
-nav {
-    background: #111;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-}
-
-nav a {
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #00ffcc;
-}
-
-/* Hero */
-.hero {
-    height: 100vh;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: white;
+/* HEADER */
+.header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
 }
 
-/* Section */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Card */
-.card {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.tab {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ddd;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Button */
-button {
-    padding: 10px 20px;
-    border: none;
-    background: black;
+.tab.active {
+    background: linear-gradient(to right, orange, #ff6a00);
     color: white;
-    border-radius: 5px;
 }
 
-/* Sections color */
-#about {background: #f4f4f4;}
-#history {background: #ffe0b2;}
-#contact {background: #c8e6c9;}
-#upload {background: #f8bbd0;}
+/* CARD GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
 
-/* Image */
-img {
-    max-width: 150px;
-    border-radius: 50%;
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight {
+    border: 3px solid orange;
+    box-shadow: 0 0 15px orange;
+}
+
+.profit {
+    background: #fff3e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
     margin-top: 10px;
 }
 
-/* WhatsApp Floating Button */
-.whatsapp {
+/* TIMELINE */
+.timeline {
+    margin: 20px;
+    padding-left: 20px;
+    border-left: 4px solid orange;
+}
+
+.step {
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    background: orange;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-left: -40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    margin: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(to right, orange, #ff6a00);
+    color: white;
+    text-align: center;
+}
+
+.subscribe input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 10px;
+}
+
+.subscribe button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FLOAT BUTTON */
+.share {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: green;
+    background: linear-gradient(to right, orange, #ff6a00);
     color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#history">History</a>
-<a href="#contact">Contact</a>
-<a href="#upload">Upload</a>
-</nav>
-
-<!-- Hero -->
-<div class="hero" id="home">
-<h1>Welcome 😎</h1>
-<p>My Professional Website</p>
+<!-- HEADER -->
+<div class="header">
+    <div class="tab active">বাংলাদেশ</div>
+    <div class="tab">United Kingdom</div>
 </div>
 
-<!-- About -->
-<section id="about">
-<div class="card">
-<h2>About Me</h2>
-<img src="https://via.placeholder.com/150">
-<p>Write about yourself here</p>
-</div>
-</section>
+<!-- CARDS -->
+<div class="container">
 
-<!-- History -->
-<section id="history">
-<div class="card">
-<h2>History</h2>
-<p>Your journey here</p>
-</div>
-</section>
+    <div class="card">
+        <h3>Bank DPS</h3>
+        <div class="profit">~9%</div>
+    </div>
 
-<!-- Contact -->
-<section id="contact">
-<div class="card">
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
+    <div class="card highlight">
+        <h3>Gov Savings</h3>
+        <div class="profit">~12%</div>
+    </div>
 
-<a href="https://wa.me/8801717865806" target="_blank">
-<button>WhatsApp Me</button>
-</a>
+    <div class="card">
+        <h3>Mutual Fund</h3>
+        <div class="profit">~8%</div>
+    </div>
+
+    <div class="card">
+        <h3>Islamic DPS</h3>
+        <div class="profit">~8%</div>
+    </div>
 
 </div>
-</section>
 
-<!-- YouTube -->
-<section>
-<div class="card">
-<h2>My Video</h2>
-<iframe width="300" height="200" 
-src="https://youtube.com/@ai_creation_2.0k?si=LHy53wI1LHFNuHwB"
-frameborder="0" allowfullscreen>
-</iframe>
+<!-- TIMELINE -->
+<div class="timeline">
+
+    <div class="step">
+        <div class="circle">18</div>
+        <h3>Start Career</h3>
+        <p>Begin your journey</p>
+    </div>
+
+    <div class="step">
+        <div class="circle">25</div>
+        <h3>Growth</h3>
+        <p>Building wealth</p>
+    </div>
+
+    <div class="step">
+        <div class="circle">40</div>
+        <h3>Success</h3>
+        <p>Financial Freedom</p>
+    </div>
+
 </div>
-</section>
 
-<!-- Upload -->
-<section id="upload">
-<div class="card">
-<h2>Upload Image</h2>
-<input type="file" id="fileInput">
-<br><br>
-<button onclick="previewImage()">Preview</button>
-<img id="preview">
+<!-- SUBSCRIBE -->
+<div class="subscribe">
+    <h2>More Tools Coming</h2>
+    <input type="text" placeholder="Enter your email">
+    <br>
+    <button>Notify Me</button>
 </div>
-</section>
 
-<!-- WhatsApp Floating -->
-<a href="https://wa.me/8801717865806" class="whatsapp" target="_blank">💬</a>
+<!-- FLOAT BUTTON -->
+<div class="share" onclick="shareNow()">Share</div>
 
 <script>
-function previewImage() {
-    const file = document.getElementById("fileInput").files[0];
-    const preview = document.getElementById("preview");
-
-    if (file) {
-        preview.src = URL.createObjectURL(file);
-    }
+function shareNow(){
+    alert("Share button clicked!");
 }
 </script>
 
 </body>
-</html>
+    </html>
+
+    
