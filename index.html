@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Pro Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Home */
+#home {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+#home h1 {
+    font-size: 40px;
+}
+
+/* About */
+#about {
+    background: #f4f4f4;
+}
+
+/* History */
+#history {
+    background: #ffe0b2;
+}
+
+/* Contact */
+#contact {
+    background: #c8e6c9;
+}
+
+/* Upload */
+#upload {
+    background: #f8bbd0;
+}
+
+/* Card style */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Image preview */
+img {
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#contact">Contact</a>
+    <a href="#upload">Upload</a>
+</nav>
+
+<section id="home">
+    <h1>Welcome to My Website 🚀</h1>
+    <p>This is a modern beautiful website</p>
+</section>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Write something about yourself here.</p>
+    </div>
+</section>
+
+<section id="history">
+    <div class="card">
+        <h2>History</h2>
+        <p>Your story or journey goes here.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+    </div>
+</section>
+
+<section id="upload">
+    <div class="card">
+        <h2>Upload Image</h2>
+        <input type="file" id="fileInput">
+        <br><br>
+        <button onclick="previewImage()">Preview</button>
+        <img id="preview">
+    </div>
+</section>
+
+<script>
+function previewImage() {
+    const file = document.getElementById("fileInput").files[0];
+    const preview = document.getElementById("preview");
+
+    if (file) {
+        preview.src = URL.createObjectURL(file);
+    }
+}
+</script>
+
+</body>
+  </html>
