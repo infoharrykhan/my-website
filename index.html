@@ -1,222 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome 🤗</title>
-<title>My Pro Website</title>
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
-}
-
-/* HEADER */
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    gap: 10px;
-}
-
-.tab {
-    padding: 10px 20px;
-    border-radius: 30px;
-    background: #ddd;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.tab.active {
-    background: linear-gradient(to right, orange, #ff6a00);
-    color: white;
-}
-
-/* CARD GRID */
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 15px;
-}
-
-.card {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.highlight {
-    border: 3px solid orange;
-    box-shadow: 0 0 15px orange;
-}
-
-.profit {
-    background: #fff3e0;
-    padding: 5px 10px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* TIMELINE */
-.timeline {
-    margin: 20px;
-    padding-left: 20px;
-    border-left: 4px solid orange;
-}
-
-.step {
-    margin-bottom: 30px;
-    animation: fadeIn 1s ease;
-}
-
-.circle {
-    width: 35px;
-    height: 35px;
-    background: orange;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 35px;
-    margin-left: -40px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-/* SUBSCRIBE */
-.subscribe {
-    margin: 20px;
-    padding: 25px;
-    border-radius: 20px;
-    background: linear-gradient(to right, orange, #ff6a00);
-    color: white;
-    text-align: center;
-}
-
-.subscribe input {
-    width: 80%;
-    padding: 12px;
-    border-radius: 25px;
-    border: none;
-    margin-top: 10px;
-}
-
-.subscribe button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: none;
-    background: white;
-    color: orange;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* FLOAT BUTTON */
-.share {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: linear-gradient(to right, orange, #ff6a00);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-/* ANIMATION */
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(10px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-</style>
-
-</head>
-
-<body>
-
-<!-- HEADER -->
-<div class="header">
-    <div class="tab active">বাংলাদেশ</div>
-    <div class="tab">United Kingdom</div>
+‎<!DOCTYPE html>
+‎<html lang="en">
+‎<head>
+‎<meta charset="UTF-8">
+‎<meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎<title>MD ABUL KHAIR| Portfolio</title>
+‎
+‎<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+‎
+‎<style>
+‎*{
+‎    margin:0;
+‎    padding:0;
+‎    box-sizing:border-box;
+‎    font-family:'Poppins', sans-serif;
+‎}
+‎
+‎body{
+‎    background: linear-gradient(135deg,#020b1f,#041d3d,#020b1f);
+‎    color:#fff;
+‎}
+‎
+‎/* MENU */
+‎.menu{
+‎    position:fixed;
+‎    top:20px;
+‎    left:20px;
+‎    font-size:25px;
+‎    background:#00c3ff;
+‎    padding:10px 15px;
+‎    border-radius:10px;
+‎}
+‎
+‎/* HEADER */
+‎.header{
+‎    text-align:center;
+‎    padding:80px 20px 40px;
+‎}
+‎
+‎/* PROFILE */
+‎.profile{
+‎    width:160px;
+‎    height:160px;
+‎    border-radius:50%;
+‎    margin:auto;
+‎    padding:5px;
+‎    background:linear-gradient(45deg,#00c3ff,#00f7ff);
+‎    box-shadow:0 0 30px #00c3ff;
+‎}
+‎
+‎.profile img{
+‎    width:100%;
+‎    height:100%;
+‎    border-radius:50%;
+‎    object-fit:cover;
+‎}
+‎
+‎/* TEXT */
+‎h1{
+‎    margin-top:20px;
+‎    font-size:30px;
+‎}
+‎
+‎.subtitle{
+‎    color:#00c3ff;
+‎    margin-top:10px;
+‎    font-size:18px;
+‎}
+‎
+‎.desc{
+‎    color:#9ccfff;
+‎    font-size:14px;
+‎}
+‎
+‎/* SOCIAL */
+‎.social{
+‎    margin-top:20px;
+‎}
+‎
+‎.social a{
+‎    color:#fff;
+‎    font-size:22px;
+‎    margin:0 10px;
+‎}
+‎
+‎/* CARD */
+‎.card{
+‎    margin:20px;
+‎    padding:20px;
+‎    border-radius:15px;
+‎    background:rgba(255,255,255,0.05);
+‎    backdrop-filter:blur(10px);
+‎    box-shadow:0 0 20px rgba(0,0,0,0.4);
+‎}
+‎
+‎/* TITLE */
+‎.title{
+‎    font-size:22px;
+‎    color:#00c3ff;
+‎    margin-bottom:15px;
+‎}
+‎
+‎/* ITEM */
+‎.item{
+‎    background:rgba(255,255,255,0.05);
+‎    padding:15px;
+‎    border-radius:10px;
+‎    margin-bottom:10px;
+‎}
+‎
+‎/* FORM */
+‎input, textarea{
+‎    width:100%;
+‎    padding:12px;
+‎    margin:10px 0;
+‎    border:none;
+‎    border-radius:8px;
+‎    background:#0b2447;
+‎    color:#fff;
+‎}
+‎
+‎button{
+‎    width:100%;
+‎    padding:12px;
+‎    border:none;
+‎    border-radius:8px;
+‎    background:#00c3ff;
+‎    color:#000;
+‎    font-weight:bold;
+‎}
+‎
+‎/* FOOTER */
+‎.footer{
+‎    text-align:center;
+‎    padding:20px;
+‎    color:#aaa;
+‎}
+‎</style>
+‎
+‎</head>
+‎
+‎<body>
+‎
+‎<!-- MENU -->
+‎<div class="menu">☰</div>
+‎
+‎<!-- HEADER -->
+‎<div class="header">
+‎
+‎    <div class="profile">
+‎        <img src="your-image.jpg" alt="My Photo">
+‎    </div>
+‎
+‎    <h1>MD ABUL KHAIR</h1>
+‎    <div class="subtitle">Aspiring Tech Enthusiast</div>
+‎    <div class="desc">Learning Today, Building Tomorrow.</div>
+‎
+‎    <div class="social">
+‎        <a href="#">📘</a>
+‎        <a href="#">✉️</a>
+‎        <a href="#">📱</a>
+‎    </div>
+‎
+‎</div>
+‎
+‎<!-- ABOUT -->
+‎<div class="card">
+‎    <div class="title">About Me</div>
+‎    <p>
+‎   I am a student. Passionate about technology, cybersecurity and building modern digital solutions.
+‎    </p>
+‎</div>
+‎
+‎<!-- EDUCATION -->
+‎<div class="card">
+‎    <div class="title">Education</div>
+‎
+‎    <div class="item">
+‎   <b>SSC - Sheikhdi Abdullah Mullah High School</b><br>
+‎        Batch 2023
+‎    </div>
+‎ <div class="item">
+‎   Govt. Tolaram College and University (Ongoing)
+‎        Batch 2025   
 </div>
-
-<!-- CARDS -->
-<div class="container">
-
-    <div class="card">
-        <h3>Bank DPS</h3>
-        <div class="profit">~9%</div>
-    </div>
-
-    <div class="card highlight">
-        <h3>Gov Savings</h3>
-        <div class="profit">~12%</div>
-    </div>
-
-    <div class="card">
-        <h3>Mutual Fund</h3>
-        <div class="profit">~8%</div>
-    </div>
-
-    <div class="card">
-        <h3>Islamic DPS</h3>
-        <div class="profit">~8%</div>
-    </div>
-
-</div>
-
-<!-- TIMELINE -->
-<div class="timeline">
-
-    <div class="step">
-        <div class="circle">18</div>
-        <h3>Start Career</h3>
-        <p>Begin your journey</p>
-    </div>
-
-    <div class="step">
-        <div class="circle">25</div>
-        <h3>Growth</h3>
-        <p>Building wealth</p>
-    </div>
-
-    <div class="step">
-        <div class="circle">40</div>
-        <h3>Success</h3>
-        <p>Financial Freedom</p>
-    </div>
-
-</div>
-
-<!-- SUBSCRIBE -->
-<div class="subscribe">
-    <h2>More Tools Coming</h2>
-    <input type="text" placeholder="Enter your email">
-    <br>
-    <button>Notify Me</button>
-</div>
-
-<!-- FLOAT BUTTON -->
-<div class="share" onclick="shareNow()">Share</div>
-
-<script>
-function shareNow(){
-    alert("Share button clicked!");
-}
-</script>
-
-</body>
-    </html>
-
-    
+‎</div>
+‎
+‎<!-- SKILLS -->
+‎<div class="card">
+‎    <div class="title">My Expertise</div>
+‎
+‎    <div class="item">Graphic Design</div>
+‎    <div class="item">Ethical Hacking</div>
+‎    <div class="item">Web Design</div>
+‎    <div class="item">Office Apps</div>
+‎</div>
+‎
+‎<!-- PROJECTS -->
+‎<div class="card">
+‎    <div class="title">Projects</div>
+‎
+‎    <div class="item">
+‎        <b>Pro Members Zone</b><br>
+‎        Premium subscription selling platform.
+‎    </div>
+‎
+‎    <div class="item">
+‎        <b>Portfolio Website</b><br>
+‎        Responsive HTML CSS design.
+‎    </div>
+‎</div>
+‎
+‎<!-- CONTACT -->
+‎<div class="card">
+‎    <div class="title">Get In Touch</div>
+‎
+‎    <input type="text" placeholder="Full Name">
+‎    <input type="email" placeholder="Email Address">
+‎    <textarea rows="4" placeholder="Your Message"></textarea>
+‎
+‎    <button>Send Message</button>
+‎</div>
+‎
+‎<!-- CONTACT DETAILS -->
+‎<div class="card">
+‎    <div class="title">Contact Details</div>
+‎
+‎    <p>📧 contact: infobellalkhan91@gmail.com</p>
+‎    <p>📱 +8801717865806</p>
+‎    <p>📘 Md Abul Khair</p>
+‎</div>
+‎
+‎<div class="footer">
+‎©️ 2026 all Right's  Developer by: abul Khair. contact us : infobellalkhan91@gmail.com.
+‎</div>
+‎
+‎</body>
+‎</html>
+‎
